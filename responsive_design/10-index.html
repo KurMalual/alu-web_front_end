@@ -16,9 +16,9 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="02-styles.css" />
+    <link rel="stylesheet" href="10-styles.css" />
   </head>
-  <body>
+  <body class="article-page">
     <!– Header –>
     <header class="header" data-section-theme="dark">
       <div class="container">
@@ -33,11 +33,12 @@
               />
             </a>
           </div>
-          <input class="menu-btn" type="checkbox" id="menu-btn">
+          <!--Menu That will not be seen-->
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn">
-             <span class="navicon"></span></label>
-          <nav class="narbar-menu"></nav>
-
+            <span class="navicon"></span>
+          </label>
+          <nav class="navbar-menu">
             <ul class="nav">
               <li class="nav-item">
                 <a href="#" class="nav-link">Home</a>
@@ -218,14 +219,10 @@
             <div class="row">
               <div class="col-1-2">
                 <img
-                  sizes="(max-width: 3000px) 40vw, 1200px"
-                  srcset="
-                    about-us_icoxoo_c_scale,w_380.jpg 380w,
-                    about-us_icoxoo_c_scale,w_853.jpg 853w,
-                    about-us_icoxoo_c_scale,w_1200.jpg 1200w"
-                   src="about-us_icoxoo_c_scale,w_1200.jpg"
-                   alt=""
-                 />
+                  sizes="(max-width: 2625px) 40vw, 1050px"
+                  src="images/pic-about-01.jpg"
+                  alt="breakpoint image"
+                />
               </div>
               <div class="col-1-2">
                 <h3>Who are we</h3>
@@ -269,10 +266,10 @@
                 <article class="card-blog">
                   <div>
                     <img
+                      sizes="(max-width: 1250px) 40vw, 500px"
                       src="images/pic-article-01.jpg"
-                      alt=""
-                      width="305"
-                      height="305"
+                      scr="images/pic-02"
+                      alt="breakpoint image"
                     />
                   </div>
                   <p class="card-category">Career</p>
@@ -291,10 +288,13 @@
                 <article class="card-blog">
                   <div>
                     <img
-                      src="images/pic-article-02.jpg"
-                      alt=""
-                      width="305"
-                      height="305"
+                      sizes="(max-width: 1250px) 40vw, 500px"
+                      srcset="
+                        images/pic-article-02_yvcklj_c_scale,w_380.jpg 380w,
+                        images/pic-article-02_yvcklj_c_scale,w_500.jpg 500w
+                      "
+                      src="images/pic-article-02_yvcklj_c_scale,w_500.jpg"
+                      alt="breakpoint image"
                     />
                   </div>
                   <p class="card-category">Digital Life</p>
@@ -317,10 +317,13 @@
                 <article class="card-blog">
                   <div>
                     <img
-                      src="images/pic-article-03.jpg"
-                      alt=""
-                      width="305"
-                      height="305"
+                      sizes="(max-width: 1250px) 40vw, 500px"
+                      srcset="
+                        images/pic-article-03_ijxq01_c_scale,w_380.jpg 380w,
+                        images/pic-article-03_ijxq01_c_scale,w_500.jpg 500w
+                      "
+                      src="images/pic-article-03_ijxq01_c_scale,w_500.jpg"
+                      alt="breakpoint image"
                     />
                   </div>
                   <p class="card-category">Social</p>
@@ -525,6 +528,5 @@
         </div>
       </div>
     </footer>
-  </body class="article-page"></body>
   </body>
 </html>
